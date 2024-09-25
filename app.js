@@ -1,0 +1,11 @@
+const Vehicle = require('./models/entities/vehicle');
+const User = require('./models/User');
+const { add, subtract, PI } = require('./utils/mathOperations');
+const vehicleController = require('./controllers/vehicleController');
+const myVehicle = new Vehicle('honda', 'toyota');
+myVehicle.getDetails();
+const user = new User('SEBASTIAN', 22);
+user.greet();
+console.log(`2 + 2 = ${add(2, 2)}`);
+console.log(`2 - 2 = ${subtract(2, 2)}`);
+console.log(`Valor de PI = ${PI}`);
